@@ -3,10 +3,10 @@ package com.foxminded.calculator;
 import java.util.Scanner;
 
 /**
- * Вывод информации через консоль, ввод чисел
+ * Вывод информации через консоль, ввод чисел.
  */
 public class Choose {
-    Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public void chooseDigits() {
         LogicOfCalculator logicOfCalculator = new LogicOfCalculator();
@@ -32,21 +32,25 @@ public class Choose {
         scanner.close();
     }
 
-    public double readNumber(){
+    private double readNumber(){
         if(scanner.hasNextDouble()){
             return scanner.nextDouble();
-        } else System.out.print("Некоректный ввод, попробуйте ещё раз: ");
-        scanner.next();
-        return readNumber();
+        } else {
+            System.out.print("Некоректный ввод, попробуйте ещё раз: ");
+            scanner.next();
+            return readNumber();
+        }
     }
 
-    public boolean repeatCalculator() {
+    private boolean repeatCalculator() {
         String repeat = scanner.next();
         if (repeat.equalsIgnoreCase("Y")) {
             return true;
         } else if (repeat.equalsIgnoreCase("N")) {
             return false;
-        } else System.out.print("Некоректный ввод, попробуйте ещё раз: ");
-        return repeatCalculator();
+        } else {
+            System.out.print("Некоректный ввод, попробуйте ещё раз: ");
+            return repeatCalculator();
+        }
     }
 }

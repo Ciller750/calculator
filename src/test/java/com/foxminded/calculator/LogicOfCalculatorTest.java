@@ -1,17 +1,11 @@
 package com.foxminded.calculator;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class LogicOfCalculatorTest {
-    private LogicOfCalculator cal;
-
-    @BeforeEach
-    void PrepareData() {
-        cal = new LogicOfCalculator();
-    }
+    private final LogicOfCalculator cal = new LogicOfCalculator();
 
     @Test
     public void testResultOfAddition() {

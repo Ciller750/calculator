@@ -1,7 +1,7 @@
 package com.foxminded.calculator;
 
 /**
- * Логика калькулятора
+ * Логика калькулятора.
  */
 public class LogicOfCalculator {
     public double calculation(double firstInputNumber, double secondInputNumber, String sign) throws IllegalArgumentException, ArithmeticException {
