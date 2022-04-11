@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class LogicOfCalculatorTest {
-    private final LogicOfCalculator cal = new LogicOfCalculator();
+    private final static LogicOfCalculator cal = new LogicOfCalculator();
 
     @Test
     public void testResultOfAddition() {

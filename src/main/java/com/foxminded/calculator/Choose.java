@@ -33,7 +33,7 @@ public class Choose {
     }
 
     private double readNumber() {
-        if(scanner.hasNextDouble()) {
+        if (scanner.hasNextDouble()) {
             return scanner.nextDouble();
         } else {
             System.out.print("Некоректный ввод, попробуйте ещё раз: ");
