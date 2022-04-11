@@ -10,13 +10,13 @@
     <groupId>com.foxminded</groupId>
     <artifactId>calculator</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <encoding>UTF-8</encoding>
         <junit_version>5.7.1</junit_version>
-        <pagckaging>jar</pagckaging>
     </properties>
 
     <dependencies>
